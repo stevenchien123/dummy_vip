@@ -1,0 +1,12 @@
+# 檔案位置：您自己 fork 的 dummy_vip 專案根目錄下的 src_files.yml
+dummy_vip:
+  incdirs: [
+    include/dummy_module,
+  ]
+  files: [
+    rtl/dummy_top.sv,
+    rtl/dummy_submodule.sv,
+  ]
+  flags: [
+    skip_synthesis,
+  ]
