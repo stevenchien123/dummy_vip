@@ -1,0 +1,3 @@
+common_cells:
+  commit: v1.13.1
+  domain: [cluster, soc]
