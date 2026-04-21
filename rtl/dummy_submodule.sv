@@ -20,6 +20,7 @@
 //-----------------------------------------------------------------------------
 
 `include "dummy_module/dummy_header.svh"
+// `include "../../common_cells/include/common_cells/registers.svh"
 
 module dummy_submodule;
   import cf_math_pkg::*;
