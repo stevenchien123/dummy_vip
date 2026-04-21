@@ -3,6 +3,9 @@ dummy_vip:
   incdirs: [
     include,
   ]
+  dependencies: [
+    common_cells,
+  ]
   vlog_opts: [
     +define+ENABLE_DUMMY_VIP,
     -L common_cells_lib,
