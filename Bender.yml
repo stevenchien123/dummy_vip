@@ -1,0 +1,19 @@
+# 檔案位置：dummy_vip/Bender.yml
+package:
+  name: dummy_vip
+  authors:
+    - "ChienShaoHsuan <p76131474@gs.ncku.edu.tw>"
+
+# 明確宣告您的 IP 依賴於 common_cells
+dependencies:
+  common_cells: { git: "https://github.com/pulp-platform/common_cells.git", version: 1.21.0 }
+
+sources:
+  # 設定這個區塊的編譯參數與檔案
+  - defines:
+      ENABLE_DUMMY_VIP: ~     # 相當於之前的 +define+ENABLE_DUMMY_VIP
+    include_dirs:
+      - include               # 標頭檔路徑
+    files:
+      - rtl/dummy_submodule.sv
+      - rtl/dummy_top.sv
